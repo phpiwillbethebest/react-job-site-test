@@ -1,0 +1,184 @@
+.item_wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  background-color: #eff0f5;
+  border-radius: 8px;
+  height: 206px;
+  padding: 16px 16px 27px 16px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+
+/* img info wrap */
+.img_info_wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/* img */
+.img_wrap {
+  margin-right: 19px;
+}
+
+.img {
+  border-radius: 50%;
+  height: 66px;
+  width: 66px;
+}
+
+/* info wrap */
+.info_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* title */
+.job_title {
+  font-family: 'proximanova400';
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.5625px;
+  color: #3a4562;
+}
+
+/* address */
+.address_text,
+.location_text {
+  font-family: 'proximanova400';
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.23619px;
+  color: #878d9d;
+  margin: 5px 0;
+}
+
+.location_wrap {
+  display: flex;
+}
+
+.location_icon {
+  margin-right: 8px;
+  width: 14px;
+  height: 20px;
+}
+
+.location_text {
+  margin: 0;
+}
+
+/* rating */
+.rating_book_post_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.rating_wrap {
+  margin-left: 85px;
+}
+
+.rating_mobile {
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+/* posted book wrap */
+.bookmark_elem {
+  display: none;
+}
+
+/* posted */
+.posttime_text {
+  font-family: 'proximanova400';
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  letter-spacing: 0.206667px;
+  color: #878d9d;
+}
+
+/* ------------------------------------------------- */
+@media screen and (min-width: 900px) {
+  .item_wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 164px;
+    padding: 24px 16px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08),
+      0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    gap: 32px;
+  }
+
+  /* img */
+  .img_wrap {
+    margin-right: 26px;
+  }
+
+  .img {
+    height: 85px;
+    width: 85px;
+  }
+
+  /* info wrap */
+  .info_wrap {
+    opacity: 80%;
+    height: 100%;
+  }
+
+  /* title */
+  .job_title {
+    font-size: 20px;
+    font-family: 'proximanova700';
+    line-height: 25px;
+    letter-spacing: -0.625px;
+  }
+
+  /* rating */
+  .rating,
+  .rating_wrap {
+    display: flex;
+    align-items: center;
+    width: 96px;
+    margin-left: 0;
+  }
+
+  .rating_book_post_wrap {
+    gap: 32px;
+    margin-bottom: 0;
+  }
+
+  /* posted book wrap */
+  .post_book_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* bookmark */
+  .bookmark_wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 8px;
+    width: 150px;
+  }
+
+  .bookmark_elem {
+    display: flex;
+  }
+
+  /* posted */
+  .posttime_text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.23619px;
+  }
+}
